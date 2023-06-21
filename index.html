@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Payment Details Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-left">
+      <header class="header">
+        <h1 class="heading-1">Payment Details</h1>
+        <div class="cards">
+          <p class="cards__text">Card type</p>
+          <div class="cards__logos">
+            <img src="../images/mastercard.png" alt="mastercard logo">
+            <img src="../images/visa-card-logo.png" alt="visa logo">
+            <img src="../images/am-express.png" alt="american express logo">
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- inputs -->
+        <form class="form">
+          <div class="form__group">
+            <label for="fullname" class="input__label">Name on Card</label>
+            <input type="text" name="fullname" placeholder="Mark Mason Brown" class="input-text">
+          </div>
+
+          <div class="form__group">
+            <label for="card-number" class="">Card Number</label>
+            <input type="text" name="card-number" placeholder="1234 5678 9123 6532" class="input-text">
+          </div>
+
+          <div class="col">
+            <div class="col-1">
+              <div class="form__group">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" name="expiration-date" placeholder="9/2022" class="input-text">
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="form__group">
+                <label for="cvv">CVV</label>
+                <input type="text" name="cvv" placeholder="999" class="input-text">
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="divider"></div>
+
+        <div class="price">
+          <div class="price__total">
+            <p class="price__text">Total</p>
+            <p class="price__value">$500.00</p>
+          </div>
+
+          <div class="price__shipping">
+            <p class="price__text">Shipping</p>
+            <p class="price__value">$50.00</p>
+          </div>
+
+          <div class="price__total-price">
+            <p class="price__text">Total Price</p>
+            <p class="price__value">$550.00</p>
+          </div>
+        </div>
+        <button type="submit" class="btn">check out</button>
+      </main>
+
+    </div>
+
+    <div class="container-right">
+      <img src="../images/Frame70.svg" alt="the pen on the right side of page" class="container-right__img">
+    </div>
+  </div>
+
+</body>
+
+</html>
